@@ -3,6 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
+testimonial_section: sections/client-testimonial.html
 ---
 <section>
   <div class="container">
@@ -10,7 +11,7 @@ layout: default
       <div class="col-md-8">
         <div class="d-flex flex-column justify-content-end bg-vh-full py-5">
           <h1>Scott A Harrington Jr.</h1>
-          <h2>Shopify Plus Engineer</h2>
+          <h2>Tech Lead - Shopify Plus</h2>
         </div>
       </div>
     </div>
@@ -71,31 +72,31 @@ layout: default
 </section>
 
 {% for project in site.data.projects %}
-  {% assign index_odd = forloop.index | modulo: 2 %}  
-  <section class="{% if index_odd == 0 %}bg-dark {% endif %}bg-vh-full">
-    <div class="container pt-5 pb-5">
+  {% assign index_odd = forloop.index | modulo: 2 %}
+  {% if page.testimonial_section %}
+    {% include {{ page.testimonial_section }}
+       title="This is a new title."
+     %}
+  {% endif %}
+{% endfor %}
+
+<section class="bg-dark bg-vh-full">
+    <div class="container py-5">
       <div class="row">
-        <div class="col-md-4">
-          {% if project.primary_image %}
-            <img src="{{ project.primary_image }}" alt="{{ project.primary_image_alt }}" class="img-fluid">
-          {% endif %}
-          {% for image in project.images %}
-            {{ image.url }}
-            {{ image.type }}
-          {% endfor %}
+        <div class="col-md-3 text-white">
+          <h1>Career Path</h1>
         </div>
-        <div class="col-md-8">
-          <h1 class="{% if index_odd == 0 %}text-white{% endif %}">{{ project.name }}</h1>
-          <a class="{% if index_odd == 0 %}text-white{% endif %}" href="{{ project.url }}">View Site</a>
-          <br>
-          <a class="{% if index_odd == 0 %}text-white{% endif %}" href="{{ project.instagram_url }}">Instagram</a>
-          <ul class="list-unstyled">
-            {% for challenge in project.challenges %}
-              <li>{{ challenge.description }}</li>
-            {% endfor %}
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-white">
+          <ul>
+            <li><h2>Military</h2></li>
+            <li><h2>Network Engineering</h2></li>
+            <li><h2>Network Engineering Project Management</h2></li>
+            <li><h2>Software Engineering - Shopify Plus</h2></li>
+            <li><h2>Software Lead Engineeer - Shopify Plus</h2></li>
           </ul>
         </div>
       </div>
     </div>
   </section>
-{% endfor %}

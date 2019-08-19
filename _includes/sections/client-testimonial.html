@@ -1,0 +1,26 @@
+<section class="{% if index_odd == 0 %}bg-dark {% endif %}bg-vh-full">
+  <div class="container pt-5 pb-5">
+    <div class="row">
+      <div class="col-md-4">
+        {% if project.primary_image %}
+          <img src="{{ project.primary_image }}" alt="{{ project.primary_image_alt }}" class="img-fluid">
+        {% endif %}
+        {% for image in project.images %}
+          {{ image.url }}
+          {{ image.type }}
+        {% endfor %}
+      </div>
+      <div class="col-md-8">
+        <h1 class="{% if index_odd == 0 %}text-white{% endif %}">{{ project.name }}</h1>
+        <a class="{% if index_odd == 0 %}text-white{% endif %}" href="{{ project.url }}">View Site</a>
+        <br>
+        <a class="{% if index_odd == 0 %}text-white{% endif %}" href="{{ project.instagram_url }}">Instagram</a>
+        <ul class="list-unstyled">
+          {% for challenge in project.challenges %}
+            <li>{{ challenge.description }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
