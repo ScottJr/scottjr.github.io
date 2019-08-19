@@ -1,0 +1,32 @@
+- name: Stio Outdoor Apparel
+  instagram_url: https://www.instagram.com/stiomountain
+  primary_image: "/assets/images/stio_1_edit.jpg"
+  primary_image_alt: "Stio"
+  url: https://www.stio.com
+  images:
+    - url: "/assets/images/stio_1_edit.jpg"
+      type: "primary"
+    - url: "/assets/images/stio_1_edit.jpg"
+      type: "primary"
+  challenges:
+    - description: "Complex customer groups discounts"
+    - description: "Ambassador custom blog"
+    - description: "Custom merchandisable inline blog content"
+- name: Soylent
+  instagram_url: https://www.instagram.com/soylent
+  url: https://www.soylent.com
+- name: Junkfood Clothing
+  instagram_url: https://www.instagram.com/junkfoodclothingco
+  url: https://www.junkfoodclothing.com
+- name: SmartyPants Vitamins
+  instagram_url: https://www.instagram.com/smartypants
+  url: https://www.smartypantsvitamins.com
+- name: Califia Farms
+  instagram_url: https://www.instagram.com/califiafarms
+  url: https://www.instagram.com/smartypants
+- name: Sol Angeles
+  instagram_url: https://www.instagram.com/solangeles
+  url: https://www.sol-angeles.com
+- name: Johnnie-O
+  instagram_url: https://www.instagram.com/johnnieobrand
+  url: https://www.johnnie-o.com
