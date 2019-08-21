@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Bold",
+    "integrations": [
+      {
+        "name": "Customer Groups",
+        "id": "customer_groups",
+        "description": "Short description of the integration"
+      },
+      {
+        "name": "Recurring Subscriptions",
+        "id": "recurring_subscriptions",
+        "description": "Another description"
+      }
+    ]
+  }
+]

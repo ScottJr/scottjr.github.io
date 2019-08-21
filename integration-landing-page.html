@@ -1,0 +1,36 @@
+---
+layout: default
+vendor_name: "Bold"
+---
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {% if site.data.projects %}
+          <ul>
+            {% for project in site.data.projects %}
+              {% assign vendor = nil %}
+              {% if project.vendors %}
+                {% for vendor in project.vendors %}
+                  {% if page.vendor_name == vendor.name %}
+                    {% assign vendor = page.vendor_name %}
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+  
+              {% if vendor != nil %}
+                <li>{{ project.name }}
+                  <ul>
+                    {% for vendor in project.vendors %}
+                      <li>{{ vendor.name }} - {{ vendor.integration }}</li>
+                    {% endfor %}
+                  </ul>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

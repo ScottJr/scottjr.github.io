@@ -1,16 +1,13 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: default
-testimonial_section: sections/client-testimonial.html
+client_work_section: sections/client-project-2-up.html
 ---
 <section>
   <div class="container">
     <div class="row">
       <div class="col-md-8">
         <div class="d-flex flex-column justify-content-end bg-vh-full py-5">
-          <h1>Scott A Harrington Jr.</h1>
+          <h1>Scott Harrington</h1>
           <h2>Tech Lead - Shopify Plus</h2>
         </div>
       </div>
@@ -18,19 +15,19 @@ testimonial_section: sections/client-testimonial.html
   </div>
 </section>
 
-<section class="bg-dark bg-vh-full">
+<section class="bg-vh-full">
   <div class="container py-5">
     <div class="row">
-      <div class="col-md-3 text-white">
+      <div class="col-md-3">
         <h1>Recent Work</h1>
         <h4>Shopify Plus</h4>
         <p>Lead Developer</p>
         <p><i>2017 - Present</i></p>
       </div>
       <div class="col-md-3">
-        <ul class="list-unstyled text-white">
+        <ul class="list-unstyled">
           {% for project in site.data.projects %}
-            <li><h2>{{ project.name }}</h2></li>
+            <li><h2><a href="#{{ project.name | downcase | replace: ' ','_'}}">{{ project.name }}</a></h2></li>
           {% endfor %}
         </ul>
       </div>
@@ -73,22 +70,20 @@ testimonial_section: sections/client-testimonial.html
 
 {% for project in site.data.projects %}
   {% assign index_odd = forloop.index | modulo: 2 %}
-  {% if page.testimonial_section %}
-    {% include {{ page.testimonial_section }}
-       title="This is a new title."
-     %}
+  {% if page.client_work_section %}
+    {% include {{ page.client_work_section }} %}
   {% endif %}
 {% endfor %}
 
-<section class="bg-dark bg-vh-full">
+<section class="bg-vh-full">
     <div class="container py-5">
       <div class="row">
-        <div class="col-md-3 text-white">
+        <div class="col-md-3">
           <h1>Career Path</h1>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12 text-white">
+        <div class="col-md-12">
           <ul>
             <li><h2>Military</h2></li>
             <li><h2>Network Engineering</h2></li>

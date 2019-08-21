@@ -6,17 +6,10 @@
     <link rel="stylesheet" href="assets/css/styles.css">
   </head>
   <body>
+    {% include layout/header.html %}
+    
     {{ content }}
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-2 offset-md-5">
-            <div class="text-center">
-              &copy; to me
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+    
+    {% include layout/footer.html %}
   </body>
 </html>
