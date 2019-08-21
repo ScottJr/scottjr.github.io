@@ -1,0 +1,18 @@
+[
+  {
+    "title": "About",
+    "url": "/about"
+  },
+  {
+    "title": "Work",
+    "url": "/work"
+  },  
+  {
+    "title": "Contact",
+    "url": "contact"
+  },
+  {
+    "title": "Commerce Garden",
+    "url": "scottjr.github.io/commerce-garden"
+  }
+]

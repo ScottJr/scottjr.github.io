@@ -1,20 +1,47 @@
 <div class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="/">Scott Harrington</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <span class="navbar-toggler-icon"></span>
+  </button>
   <ul class="navbar-nav mr-auto">
-    <li><a class="nav-link" href="/integration-landing-page">Bold</a></li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Dropdown
-      </a>
-      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Something else here</a>
-      </div>
-    </li>
+  {% for link in site.data.navigation.header-nav %}
+    {% assign page_slug = page.url | replace: ".html", "" | remove_first: "/" %}
+    {% assign link_slug = link.url | remove_first: "/" %}
+
+    {% assign link_has_sublinks = false %}
+    {% if link.subNavItems != nil %}
+      {% assign link_has_sublinks = true %}
+    {% endif %}
+
+    {% assign link_has_subsublinks = false %}
+    {% for subnav_item in link.subNavItems %}
+      {% for subsubnav_item in subnav_item.subSubNavItems %}
+        {% if subsubnav_item.title != blank %}
+          {% assign link_has_subsublinks = true %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+
+    {% if link_has_sublinks != true %}
+      <li><a class="nav-link{% if page_slug == link_slug %} active{% endif %}" href="{{ link.url }}">{{ link.title }}</a></li>
+    {% elsif link_has_sublinks %}
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="{{ link_slug }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{ link.title }}
+          </a>
+          <div class="dropdown-menu" aria-labelledby="{{ link_slug }}">
+            {% for subnav_item in link.subNavItems%}
+              <a class="dropdown-item" href="{{ subnav_item.url }}">{{ subnav_item.title }}</a>
+              <ul>
+                {% for subsubnav_item in subnav_item.subSubNavItems %}
+                  <li><a href="{{ subsubnav_item.url }}">{{ subsubnav_item.title }}</a></li>
+                {% endfor %}
+              </ul>
+            {% endfor %}
+          </div>
+      </li>
+    {% endif %}
+  {% endfor %}
   </ul>
 </div>    
