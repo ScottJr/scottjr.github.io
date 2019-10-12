@@ -1,0 +1,38 @@
+[
+	{
+		"name": "Carmar Denim",
+		"id": "carmar"
+	},
+	{
+		"name": "G-Ro Luggage",
+		"id": "gro"
+	},
+	{
+		"name": "Good hYOUman",
+		"id": "goodhyouman"
+	},
+	{
+		"name": "Indeed Labs",
+		"id": "indeed-labs"
+	},
+	{
+		"name": "Emma & Sam",
+		"id": "emma-sam"
+	},
+	{
+		"name": "Green Dog Dental",
+		"id": "green-dog-dental"
+	},
+	{
+		"name": "Healthy Spot",
+		"id": "healthy-spot"
+	},
+	{
+		"name": "Roe Caviar",
+		"id": "roe-caviar"
+	},
+	{
+		"name": "Tabanero",
+		"id": "tabanero"
+	}
+]

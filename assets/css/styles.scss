@@ -1,8 +1,14 @@
 ---
 ---
+// Layout
+@import "layout/sections";
+
 // Partials
 @import "partials/variables";
+@import "partials/utilities/mixins/aspect-ratio";
+@import "partials/utilities/mixins/stretch";
 @import "partials/utilities";
+@import "partials/utilities/frame";
 @import "partials/typography";
 
 // Vendors

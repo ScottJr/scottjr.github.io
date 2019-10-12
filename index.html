@@ -1,14 +1,16 @@
 ---
 layout: default
-client_work_section: sections/client-project-2-up.html
+client_work_section: sections/content-image-media.html
+client_banner_section: sections/banner.html
 ---
-<section>
+
+<section class="section--panel" style="background-image: url('/assets/images/andre-benz-IjoHx27YqQU-unsplash.jpg');">
   <div class="container">
     <div class="row">
       <div class="col-md-8">
         <div class="d-flex flex-column justify-content-end bg-vh-full py-5">
-          <h1>Scott Harrington</h1>
-          <h2>Tech Lead - Shopify Plus</h2>
+          <h1 class="display-2 text-white">Scott Harrington</h1>
+          <p class="text-white">Senior Shopify Plus Engineer | Los Angeles, CA</p>
         </div>
       </div>
     </div>
@@ -18,13 +20,13 @@ client_work_section: sections/client-project-2-up.html
 <section class="bg-vh-full">
   <div class="container py-5">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-12 col-md-offset-2 col-md-4">
         <h1>Recent Work</h1>
         <h4>Shopify Plus</h4>
         <p>Lead Developer</p>
-        <p><i>2017 - Present</i></p>
+        <p><i>2017 - 2019</i></p>
       </div>
-      <div class="col-md-3">
+      <div class="col-12 col-md-6">
         <ul class="list-unstyled">
           {% for project in site.data.projects %}
             <li><h2><a href="#{{ project.name | downcase | replace: ' ','_'}}">{{ project.name }}</a></h2></li>
@@ -35,45 +37,36 @@ client_work_section: sections/client-project-2-up.html
   </div>
 </section>
 
-<section class="py-5">
-  <div class="container">
+{% for project in site.data.projects %}
+  {% assign index_odd = forloop.index | modulo: 2 %}
+  {% if page.client_work_section %}
+    {% if project.layout == 'banner' %}
+      {% include {{ page.client_banner_section }} %}
+    {% else %}
+      {% include {{ page.client_work_section }} %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+<section class="bg-vh-full">
+  <div class="container py-5">
     <div class="row">
-      <div class="col-md-12">
-          <div class="gallery">
-            <div class="gallery__item gallery__item--1">
-              <img src="assets/images/stio_1_edit.jpg" class="gallery__img" alt="Image 1">
-            </div>
-            <div class="gallery__item gallery__item--2">
-              <img src="assets/images/stio_1_edit.jpg" class="gallery__img" alt="Image 2">
-            </div>
-            <div class="gallery__item gallery__item--3">
-              <ul class="list-unstyled">
-                {% for project in site.data.projects %}
-                  <li><h5>{{ project.name }}</h5></li>
-                {% endfor %}
-              </ul>
-            </div>
-            <div class="gallery__item gallery__item--4">
-              <img src="assets/images/stio_1_edit.jpg" class="gallery__img" alt="Image 4">
-            </div>
-            <div class="gallery__item gallery__item--5">
-              <img src="assets/images/stio_1_edit.jpg" class="gallery__img" alt="Image 5">
-            </div>
-            <div class="gallery__item gallery__item--6">
-              <img src="assets/images/stio_1_edit.jpg" class="gallery__img" alt="Image 6">
-            </div>
-          </div>
+      <div class="col-12 col-md-offset-2 col-md-4">
+        <h1>Past Work</h1>
+        <h4>Shopify</h4>
+        <p>Lead Developer</p>
+        <p><i>2014 - 2017</i></p>
+      </div>
+      <div class="col-12 col-md-6">
+        <ul class="list-unstyled">
+          {% for project in site.data.old-projects %}
+            <li><h2><a href="#{{ project.name | downcase | replace: ' ','_'}}">{{ project.name }}</a></h2></li>
+          {% endfor %}
+        </ul>
       </div>
     </div>
   </div>
 </section>
-
-{% for project in site.data.projects %}
-  {% assign index_odd = forloop.index | modulo: 2 %}
-  {% if page.client_work_section %}
-    {% include {{ page.client_work_section }} %}
-  {% endif %}
-{% endfor %}
 
 <section class="bg-vh-full">
     <div class="container py-5">

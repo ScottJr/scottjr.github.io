@@ -6,6 +6,8 @@ $theme-colors: (
   "dark": black
 );
 
+$font-family-base: 'Poppins', sans-serif;
+
 $grid-breakpoints: (
   // Extra small screen / phone
   xs: 0,
@@ -16,12 +18,19 @@ $grid-breakpoints: (
   // Large screen / desktop
   lg: 992px,
   // Extra large screen / wide desktop
-  xl: 1200px
+  xl: 1200px,
+  xxl: 1310px
 );
 
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px
+  sm: 570px,
+  md: 760px,
+  lg: 990px,
+  xl: 1190px,
+  xxl: 1320px
 );
+
+$spacer: 1rem !default;
+$spacers: (
+  10: ($spacer * 7)
+)
