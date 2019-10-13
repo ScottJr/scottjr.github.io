@@ -2,10 +2,10 @@ const config        = require('./config');
 const sass          = require('gulp-sass');
 const { series, src, dest } = require('gulp');
 
-const compileVendor = () => {
-  return src('./_sass/vendor/*.scss')
+const styles = () => {
+  return src('./_sass/styles.scss')
     .pipe(sass())
-    .pipe(dest('assets/vendor'));
+    .pipe(dest('assets/css'));
 }
 
-exports.default = series(compileVendor);
+exports.default = series(styles);
