@@ -22,6 +22,8 @@
     "popper.js": "^1.15.0"
   },
   "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2"
   }
 }
