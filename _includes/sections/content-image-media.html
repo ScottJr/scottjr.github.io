@@ -1,4 +1,4 @@
-<section class="pt-10 pb-10" id="{{ project.name | downcase | replace: ' ','_'}}">
+<section class="bg-vh-full pt-10 pb-10">
   <div class="container">
     <div class="row {{ index_odd }}{% if index_odd == 0 %} d-flex flex-row-reverse{% endif %}">
       <div class="col-md-6">
@@ -6,19 +6,24 @@
           <div class="frame frame--1x1" style="background-image: url('{{ project.primary_image }}');"></div>
         {% endif %}
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 d-flex flex-column justify-content-center">
         <h1 class="display-2">{{ project.name }}</h1>
-        {% if project.description != nil %}
-          {{ project.description }}
-        {% endif %}
-        {% if project.challenges != nil %}
-          <h2 class="h5">Project Highlights:</h2>
-          <ul>
-            {% for challenge in project.challenges %}
-              <li><p>{{ challenge.description }}</p></li>
-            {% endfor %}
-          </ul>
-        {% endif %}
+        <div class="row">
+          <div class="col-10">
+            {% if project.description != nil %}
+              {{ project.description }}
+            {% endif %}
+            {% if project.challenges != nil %}
+              <h2 class="h5">Project Highlights:</h2>
+              <ul>
+                {% for challenge in project.challenges %}
+                  <li>{{ challenge.description }}</li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </div>
+        </div>
+        <a href="{{ project.url }}" target="_blank">View Site</a>
       </div>
     </div>
   </div>

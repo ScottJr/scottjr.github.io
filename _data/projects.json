@@ -1,17 +1,28 @@
 [
 	{
 		"name": "Only Natural Pet",
-		"description": "<p>Only Natural Pet was a complete platform migration from a legacy e-commerce solution to Shopify Plus.</p><p>Only Natural Pet had a completely customized version of ReCharge implemented for their large subscription base. To include account management portals, cart and AJAX cart customizations.</p>",
+		"description": "<p>Only Natural Pet was a complete platform migration from a legacy e-commerce solution to Shopify Plus.</p>",
 		"id": "onp",
 		"shopify_plus_enabled": true,
 		"primary_image": "/assets/images/onp-lucrezia-carnelos-F0if-2LD4cA-unsplash.jpg",
 		"primary_image_alt": "Only Natural Pet",
-		"layout": "banner"
+		"layout": "banner",
+		"challenges": [
+			{
+				"description": "<p>Completely custom ReCharge implementation for a large subscription base.</p>"
+			},
+			{
+				"description": "<p>Merchandisable Blog Articles</p>"
+			},
+			{
+				"description": "<p>Advanced metafields configurations for product-level details</p>"
+			}			
+		]
 	},
 	{
 		"name": "Stio Outdoor Apparel",
+		"id": "stio-outdoor-apparel",
 		"description": "<p>Wyoming-based Stio produces some of the top outerware in the world. If you want to ski down a mountain, parachute off a cliff, and then stick the landing, I'd suggest you wear one of their jackets.</p>",
-    "id": "stio_outdoor_apparel",
     "shopify_plus_enabled": true,
 		"instagram_url": "https://www.instagram.com/stiomountain",
 		"primary_image": "/assets/images/stio_1_edit.jpg",
@@ -29,53 +40,99 @@
 		],
 		"challenges": [
 			{
-				"description": "Migration from legacy e-commerce platform to Shopify Plus"
+				"description": "<p>Migration from legacy e-commerce platform to Shopify Plus</p>"
 			},
 			{
-				"description": "Custom group discounts utilizing Bold Customer Groups"
+				"description": "<p>Custom group discounts utilizing Bold Customer Groups</p>"
 			},
 			{
-				"description": "Merchandiable Blog Articles"
+				"description": "<p>Merchandisable Blog Articles</p>"
 			},
 			{
-				"description": "Advanced metafields configurations for product-level details"
+				"description": "<p>Advanced metafields configurations for product-level details</p>"
 			}
     ]
 	},
 	{
 		"name": "Soylent",
-		"description": "<p>Los Angeles based Soylent is the leader in pro-GMO complete nutrition based upon science. They are pretty tasty and can be found in 7/11 convenience stores all over.</p><p>I lead development on a completely custom ReCharge subscription implementation for their large subscription base. All sites on the page have the ability to customize the content in the native Shopify Theme Editor. Advanced Metafields were used extensively for faceted product details.</p>",
+		"id": "soylent",
+		"description": "<p>Los Angeles based Soylent is the leader in pro-GMO complete nutrition based upon science. They are pretty tasty and can be found in 7/11 convenience stores all over.</p>",
 		"instagram_url": "https://www.instagram.com/soylent",
 		"url": "https://www.soylent.com",
 		"primary_image": "/assets/images/soylent_2.jpg",
-		"layout": "banner"
+		"layout": "banner",
+		"challenges": [
+			{
+				"description": "<p>Migration from legacy e-commerce platform to Shopify Plus</p>"
+			},
+			{
+				"description": "<p>Complete control of all content on site to add, remove, delete and content section, sitewide</p>"
+			},
+			{
+				"description": "<p>Advanced metafields configurations for product-level details</p>"
+			}
+		]
 	},
 	{
 		"name": "Junkfood Clothing",
-		"description": "All those cool vintage NFL shirts at Target? Yeah that's them. With two subsects of the brand covering differnt markets (Rock n Roll & Sports), I created a completely customizable CMS that allowed JunkFood to easily create unique brand experiences with no developer involvement. Customizable promo blocks on product listing pages have advanced logic to hide and display.",
+		"id": "junkfood-clothing",
+		"description": "<p>All those vintage rocker shirts at Target? Yeah that's them. With two subsects of the brand covering different markets (Rock n Roll & Sports).",
 		"instagram_url": "https://www.instagram.com/junkfoodclothingco",
 		"url": "https://www.junkfoodclothing.com",
-		"primary_image": "/assets/images/junkfood_III.jpg"
+		"primary_image": "/assets/images/junkfood_III.jpg",
+		"challenges": [
+			{
+				"description": "<p>Advanced metafields configurations for product-level details</p>"
+			},
+			{
+				"description": "<p>Complete control of all content on site to add, remove, delete and content section, sitewide</p>"
+			},
+			{
+				"description": "<p>Customizable promo blocks on product listing pages have advanced logic to hide and display</p>"
+			}
+		]
 	},
 	{
 		"name": "SmartyPants Vitamins",
-		"description": "You think your smart don't you? Well you'd be smarter if you took these vitamins. Vitamins are complex little things and have lots of important details to display for the consumer. Thankfully, metafields can be configured to allow the store admin to input all of this data with specificity without breaking the layout and original design of the site.",
+		"id": "smarty-pants-vitamins",
+		"description": "<p>You think your smart don't you? Well you'd be smarter if you took these vitamins.</p>",
 		"instagram_url": "https://www.instagram.com/smartypants",
 		"url": "https://www.smartypantsvitamins.com",
 		"primary_image": "/assets/images/smartypants.jpg",
-		"layout": "banner"
+		"layout": "banner",
+		"challenges": [
+			{
+				"description": "<p>Advanced metafields configurations for product-level details</p>"
+			},
+			{
+				"description": "<p>Complete control of all content on site to add, remove, delete and content section, sitewide</p>"
+			}
+		]
 	},
 	{
 		"name": "Califia Farms",
-		"description": "It's everywhere now. Pretty much every store in Southern California sells Califia (we are nuts for this stuff in California). We created a custom subscription component utilizing ReCharge so you can always have your fix no matter where you might live.",
+		"id": "califia-farms",
+		"description": "<p>Almond Milk. It's everywhere now. I'm nuts for this stuff. We created a custom subscription component utilizing ReCharge so you can always have your fix no matter where you live.</p>",
 		"instagram_url": "https://www.instagram.com/califiafarms",
 		"url": "https://www.instagram.com/smartypants",
 		"primary_image": "/assets/images/califia_farms.jpg",
-		"primary_image_alt": "Califia Farms"
+		"primary_image_alt": "Califia Farms",
+		"challenges": [
+			{
+				"description": "<p>Migration from legacy e-commerce platform to Shopify Plus</p>"
+			},
+			{
+				"description": "<p>Advanced metafields configurations for product-level details</p>"
+			},
+			{
+				"description": "<p>Complete control of all content on site to add, remove, delete and content section, sitewide</p>"
+			}
+		]
 	},
 	{
 		"name": "Sol Angeles",
-		"description": "A Los Angeles based clothing company with it's roots in Venice. Definition of casual beach cool. Cool huh? This super clean site is straight and to the point.",
+		"id": "sol-angeles",
+		"description": "<p>A Los Angeles based clothing company with it's roots in Venice. Definition of casual beach cool. Cool huh? This super clean site is straight and to the point.</p>",
 		"instagram_url": "https://www.instagram.com/solangeles",
 		"url": "https://www.sol-angeles.com",
 		"primary_image": "/assets/images/sol_angeles.jpg",
@@ -89,19 +146,39 @@
 	},
 	{
 		"name": "Johnnie-O",
-		"description": "Some of the biggest names in sports throw on a Johnnie-O polo before they hit the links. A spot of tennis anyone? Perfect for Johnnie-O. A super large catalog with lots of sports brands can turn to a taxonomy nightmare, thankfully I lead development efforts to wrangle these teams and colors to allow the store admin to efficiently carry out their tasks.",
+		"id": "johnnie-o",
+		"description": "<p>Some of the biggest names in sports throw on a Johnnie-O polo before they hit the links. A spot of tennis anyone? Perfect for Johnnie-O.</p>",
 		"instagram_url": "https://www.instagram.com/johnnieobrand",
 		"url": "https://www.johnnie-o.com",
 		"primary_image": "/assets/images/johnnie_o_II.jpg",
-		"primary_image_alt": "Johnnie-O"
+		"primary_image_alt": "Johnnie-O",
+		"challenges": [
+			{
+				"description": "<p>Custom ability to handle large catalog taxonomies on category and product listing pages</p>"
+			},
+			{
+				"description": "<p>Advanced metafields configurations for product-level details</p>"
+			},
+			{
+				"description": "<p>Complete control of all content on site to add, remove, delete and content section, sitewide</p>"
+			}
+		]
 	},
 	{
 		"name": "Johnson & Johnson",
-		"description": "Your momma probably put their powder on your bottom when you were a lil baby. I lead development efforts to migrate a legacy e-commerce platform to Shopify Plus for the internal Johnson & Johnson team members to purchase discounted products. This project also involved working with internal J&J network users to allow for access into the Shopify instance (i.e. Private app).",
-		"id": "johnson_johnson",
+		"description": "<p>Your momma probably put their powder on your bottom when you were a lil baby. I lead development efforts to migrate a legacy e-commerce platform to Shopify Plus for the internal Johnson & Johnson team members to purchase discounted products.</p>",
+		"id": "johnson-johnson",
 		"shopify_plus_enabled": true,
-		"primary_image": "/assets/images/j_j_ii.jpg",
+		"primary_image": "/assets/images/valeria-zoncoll-AVGc87j_vNA-unsplash.jpg",
 		"primary_image_alt": "Johnson & Johnson",
-		"layout": "banner"
+		"layout": "banner",
+		"challenges": [ 
+			{
+				"description": "<p>Migration from legacy e-commerce platform to Shopify Plus</p>"
+			},
+			{
+				"description": "<p>Internal J&J network users to allow for access into the Shopify instance (i.e. Private app).</p>"
+			}
+		]
 	}	
 ]
