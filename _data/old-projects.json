@@ -1,38 +1,57 @@
 [
 	{
 		"name": "Carmar Denim",
+		"description": "Store theme build",
 		"id": "carmar"
 	},
 	{
 		"name": "G-Ro Luggage",
+		"description": "Store theme build",
 		"id": "gro"
 	},
 	{
 		"name": "Good hYOUman",
+		"description": "Store Theme Build. Site maintenance",
 		"id": "goodhyouman"
 	},
 	{
+		"name": "Budgy Smuggler",
+		"description": "Site maintenance",
+		"id": "budgy-smuggler"
+	},	
+	{
+		"name": "Kendall & Kylie",
+		"description": "Site maintenance",
+		"id": "kendall-kylie"
+	},		
+	{
 		"name": "Indeed Labs",
+		"description": "Store theme build",
 		"id": "indeed-labs"
 	},
 	{
 		"name": "Emma & Sam",
+		"description": "Store theme build",
 		"id": "emma-sam"
 	},
 	{
 		"name": "Green Dog Dental",
+		"description": "Store theme build",
 		"id": "green-dog-dental"
 	},
 	{
 		"name": "Healthy Spot",
+		"description": "Store theme build. Site maintenance",
 		"id": "healthy-spot"
 	},
 	{
 		"name": "Roe Caviar",
+		"description": "Store theme build",
 		"id": "roe-caviar"
 	},
 	{
 		"name": "Tabanero",
+		"description": "Store theme build",
 		"id": "tabanero"
 	}
 ]

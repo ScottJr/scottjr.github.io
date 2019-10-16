@@ -1,3 +1,20 @@
 <form action="/signup" method="post" data-submit>
-  <button type="submit">Submit</button>
+  <div class="form-group">
+    <label {% if include.theme == "dark" %} class="text-white"{% endif %} for="email">Email address</label>
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label {% if include.theme == "dark" %} class="text-white"{% endif %} for="inputFirst">First</label>
+    <input type="text" class="form-control" id="inputFirst" placeholder="Enter first name">
+  </div>
+  <div class="form-group">
+    <label {% if include.theme == "dark" %} class="text-white"{% endif %} for="inputLast">Last</label>
+    <input type="text" class="form-control" id="inputLast" placeholder="Enter last name">
+  </div>  
+  <div class="form-group">
+    <label {% if include.theme == "dark" %} class="text-white"{% endif %} for="textarea">Message</label>
+    <textarea class="form-control" id="textarea" rows="3"></textarea>
+  </div>
+  <button class="btn{% if include.theme == "dark" %} btn-secondary{% else %} btn-primary{% endif %}" type="submit">Submit</button>
 </form>

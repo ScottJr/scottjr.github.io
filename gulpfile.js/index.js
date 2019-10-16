@@ -1,11 +1,18 @@
 const config        = require('./config');
 const sass          = require('gulp-sass');
-const { series, src, dest } = require('gulp');
+const { watch, src, dest } = require('gulp');
 
-const styles = () => {
-  return src('./_sass/styles.scss')
+const styleCompile = () => {
+  return src('_sass/styles.scss')
     .pipe(sass())
     .pipe(dest('assets/css'));
 }
 
-exports.default = series(styles);
+const style = (cb) => {
+  styleCompile();
+  cb();
+}
+
+exports.default = () => {
+  watch('_sass/**/*.scss', style);
+}

@@ -1,10 +1,2 @@
 // Background Sizing
-.bg-vh-full { min-height: calc(100vh - 56px); padding-top: 56px; }
-
-.bg-ph--1x1 {
-  position: relative;
-  
-  &:before {
-    content: "";
-  }
-}
+.bg-vh-full { min-height: 95vh; }

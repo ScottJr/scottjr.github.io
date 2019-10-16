@@ -1,28 +1,25 @@
-<section class="bg-vh-full pt-10 pb-10">
+<section class="bg-vh-full pt-7 pt-lg-10 pb-5 pb-lg-10 d-flex align-items-center">
   <div class="container">
-    <div class="row {{ index_odd }}{% if index_odd == 0 %} d-flex flex-row-reverse{% endif %}">
-      <div class="col-md-6">
+    <div class="row">
+      <div class="col-10 offset-1 col-lg-6 offset-lg-0 p-md-2 p-lg-5">
+        <h1 class="display-3 d-block d-lg-none">{{ project.name }}</h1> 
         {% if project.primary_image %}
-          <div class="frame frame--1x1" style="background-image: url('{{ project.primary_image }}');"></div>
+          <div class="my-4 my-lg-0 frame frame--1x1" style="background-image: url('{{ project.primary_image }}');"></div>
         {% endif %}
       </div>
-      <div class="col-md-6 d-flex flex-column justify-content-center">
-        <h1 class="display-2">{{ project.name }}</h1>
-        <div class="row">
-          <div class="col-10">
-            {% if project.description != nil %}
-              {{ project.description }}
-            {% endif %}
-            {% if project.challenges != nil %}
-              <h2 class="h5">Project Highlights:</h2>
-              <ul>
-                {% for challenge in project.challenges %}
-                  <li>{{ challenge.description }}</li>
-                {% endfor %}
-              </ul>
-            {% endif %}
-          </div>
-        </div>
+      <div class="col-10 offset-1 col-lg-6 offset-lg-0 p-md-2 p-lg-5 d-flex flex-column justify-content-center">
+        <h1 class="display-3 d-none d-lg-block">{{ project.name }}</h1> 
+        {% if project.description != nil %}
+          {% comment %} {{ project.description }} {% endcomment %}
+        {% endif %}
+        {% if project.challenges != nil %}
+          <h2 class="h5">Project Highlights:</h2>
+          <ul>
+            {% for challenge in project.challenges %}
+              <li>{{ challenge.description }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
         <a href="{{ project.url }}" target="_blank">View Site</a>
       </div>
     </div>

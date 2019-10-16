@@ -1,30 +1,36 @@
-<section class="section--panel bg-vh-full pt-10 pb-10" id="{{ project.id }}">
+<section class="section--panel bg-vh-full py-4 py-lg-6 d-flex align-items-center" id="{{ project.id }}">
   <style>
     {% if project.layout == "banner" %}
       #{{ project.id }} {
         background-image: url('{{ project.primary_image }}');
       }
+      #{{ project.id }}:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%; 
+        background: #d1d1d142;
+      }
     {% endif %}
   </style>
   <div class="container">
     <div class="row">
-      <div class="col-8">
-        <h1 class="display-1">{{ project.name }}</h1>
-        {% if project.description != nil %}
-          <div class="row">
-            <div class="col-6">
-              {{ project.description }}
-              <h2 class="h5">Project Highlights:</h2>
-              {% if project.challenges != nil %}
-              <ul>
-                {% for challenge in project.challenges %}
-                <li>{{ challenge.description }}</li>
-                {% endfor %}
-              </ul>
-              {% endif %}
-              <a href="{{ project.url }}" target="_blank">View Site</a>
-            </div>
-          </div>
+      <div class="offset-1 col-10 col-md-6 p-5" style="background: #ffffffd4;">
+        <h1 class="display-3">{{ project.name }}</h1>
+        {% if project.description != nil %} 
+          <h2 class="h5">Project Highlights:</h2>
+          {% if project.challenges != nil %}
+          <ul>
+            {% for challenge in project.challenges %}
+            <li>{{ challenge.description }}</li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+          <a href="{{ project.url }}" target="_blank">View Site</a>
         {% endif %}
       </div>
     </div>

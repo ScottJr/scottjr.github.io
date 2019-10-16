@@ -1,10 +1,11 @@
 ---
+title: Scott Harrington - Shopify Plus Sr. Engineer
 layout: default
 client_work_section: sections/content-image-media.html
 client_banner_section: sections/banner.html
 ---
 
-<section class="section--panel" style="background-image: url('/assets/images/andre-benz-IjoHx27YqQU-unsplash.jpg');">
+<section class="section--panel" style="background-image: url('/assets/images/IMG_4870.JPG');">
   <div class="container">
     <div class="row">
       <div class="col-md-8">
@@ -17,8 +18,8 @@ client_banner_section: sections/banner.html
   </div>
 </section>
 
-<section class="bg-vh-full">
-  <div class="container py-5">
+<section class="bg-vh-full pt-5 pt-lg-8 pb-5 pb-lg-8">
+  <div class="container">
     <div class="row">
       <div class="col-12 col-md-offset-2 col-md-4">
         <h1>Recent Work</h1>
@@ -26,7 +27,7 @@ client_banner_section: sections/banner.html
         <p>Lead Developer</p>
         <p><i>2017 - 2019</i></p>
       </div>
-      <div class="col-12 col-md-6">
+      <div class="col-12 col-md-6 pt-2">
         <ul class="list-unstyled">
           {% for project in site.data.projects %}
             <li><h2><a href="#{{ project.name | downcase | replace: ' ','_'}}">{{ project.name }}</a></h2></li>
@@ -48,8 +49,8 @@ client_banner_section: sections/banner.html
   {% endif %}
 {% endfor %}
 
-<section class="bg-vh-full">
-  <div class="container py-5">
+<section class="bg-vh-full pt-5 pt-lg-8 pb-5 pb-lg-8">
+  <div class="container">
     <div class="row">
       <div class="col-12 col-md-offset-2 col-md-4">
         <h1>Past Work</h1>
@@ -57,10 +58,10 @@ client_banner_section: sections/banner.html
         <p>Lead Developer</p>
         <p><i>2014 - 2017</i></p>
       </div>
-      <div class="col-12 col-md-6">
+      <div class="col-12 col-md-6 pt-2">
         <ul class="list-unstyled">
           {% for project in site.data.old-projects %}
-            <li><h2><a href="#{{ project.name | downcase | replace: ' ','_'}}">{{ project.name }}</a></h2></li>
+            <li><h2>{{ project.name }}{% if project.description != nil %} <small class="text-muted">{{ project.description }}</small>{% endif %}</h2></li>
           {% endfor %}
         </ul>
       </div>
@@ -68,23 +69,4 @@ client_banner_section: sections/banner.html
   </div>
 </section>
 
-<section class="bg-vh-full">
-    <div class="container py-5">
-      <div class="row">
-        <div class="col-md-3">
-          <h1>Career Path</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <ul>
-            <li><h2>Military</h2></li>
-            <li><h2>Network Engineering</h2></li>
-            <li><h2>Network Engineering Project Management</h2></li>
-            <li><h2>Software Engineering - Shopify Plus</h2></li>
-            <li><h2>Software Lead Engineeer - Shopify Plus</h2></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+{% include sections/contact.html %} 
