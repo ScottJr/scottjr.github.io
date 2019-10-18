@@ -30,7 +30,7 @@ client_banner_section: sections/banner.html
       <div class="col-12 col-md-6 pt-2">
         <ul class="list-unstyled">
           {% for project in site.data.projects %}
-            <li><h2><a href="#{{ project.name | downcase | replace: ' ','_'}}">{{ project.name }}</a></h2></li>
+            <li><h2><a href="#{{ project.id }}">{{ project.name }}</a></h2></li>
           {% endfor %}
         </ul>
       </div>

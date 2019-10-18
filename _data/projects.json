@@ -9,13 +9,22 @@
 		"layout": "banner",
 		"challenges": [
 			{
-				"description": "<p>Completely custom ReCharge implementation for a large subscription base.</p>"
+				"description": "<p>Platform migration from a legacy e-commerce solution to Shopify Plus"
 			},
 			{
-				"description": "<p>Merchandisable Blog Articles</p>"
+				"description": "<p>Extensive theme editor and metafield configurations (CMS) for ease of store management</p>"
+			},			
+			{
+				"description": "<p>Custom ReCharge implementation utilizing Theme Engine</p>"
 			},
 			{
-				"description": "<p>Advanced metafields configurations for product-level details</p>"
+				"description": "<p>Custom blog with merchandisable posts</p>"
+			},
+			{
+				"description": "<p>Custom implementation of Findify faceted search</p>"
+			},
+			{
+				"description": "<p>Advanced metafields configurations for product detail page</p>"
 			}			
 		]
 	},
@@ -40,16 +49,25 @@
 		],
 		"challenges": [
 			{
-				"description": "<p>Migration from legacy e-commerce platform to Shopify Plus</p>"
+				"description": "<p>Platform migration from a legacy e-commerce solution to Shopify Plus"
 			},
+			{
+				"description": "<p>Extensive theme editor and metafield configurations (CMS) for ease of store management</p>"
+			},			
 			{
 				"description": "<p>Custom group discounts utilizing Bold Customer Groups</p>"
 			},
 			{
-				"description": "<p>Merchandisable Blog Articles</p>"
+				"description": "<p>Custom blog with merchandisable posts</p>"
 			},
 			{
-				"description": "<p>Advanced metafields configurations for product-level details</p>"
+				"description": "<p>Advanced metafields configurations for product detail page</p>"
+			},
+			{
+				"description": "<p>Custom implementation of Findify faceted search</p>"
+			},
+			{
+				"description": "<p>Custom implementation of Yotpo reviews</p>"
 			}
     ]
 	},
@@ -63,14 +81,17 @@
 		"layout": "banner",
 		"challenges": [
 			{
-				"description": "<p>Migration from legacy e-commerce platform to Shopify Plus</p>"
+				"description": "<p>Platform migration from a legacy e-commerce solution to Shopify Plus"
 			},
 			{
-				"description": "<p>Complete control of all content on site to add, remove, delete and content section, sitewide</p>"
+				"description": "<p>Extensive theme editor and metafield configurations (CMS) for ease of store management</p>"
 			},
 			{
-				"description": "<p>Advanced metafields configurations for product-level details</p>"
-			}
+				"description": "<p>Advanced metafields configurations for product detail page</p>"
+			},
+			{
+				"description": "<p>Custom ReCharge implementation</p>"
+			}			
 		]
 	},
 	{
@@ -82,13 +103,16 @@
 		"primary_image": "/assets/images/junkfood_III.jpg",
 		"challenges": [
 			{
-				"description": "<p>Advanced metafields configurations for product-level details</p>"
+				"description": "<p>New theme development for existing Shopify Plus store</p>"
+			},			
+			{
+				"description": "<p>Advanced metafields configurations for product detail page</p>"
 			},
 			{
-				"description": "<p>Complete control of all content on site to add, remove, delete and content section, sitewide</p>"
+				"description": "<p>Extensive theme editor and metafield configurations (CMS) for ease of store management</p>"
 			},
 			{
-				"description": "<p>Customizable promo blocks on product listing pages have advanced logic to hide and display</p>"
+				"description": "<p>Customizable promo blocks on product listing pages</p>"
 			}
 		]
 	},
@@ -102,10 +126,13 @@
 		"layout": "banner",
 		"challenges": [
 			{
+				"description": "<p>New theme development for existing Shopify Plus store</p>"
+			},						
+			{
 				"description": "<p>Advanced metafields configurations for product-level details</p>"
 			},
 			{
-				"description": "<p>Complete control of all content on site to add, remove, delete and content section, sitewide</p>"
+				"description": "<p>Extensive theme editor and metafield configurations (CMS) for ease of store management</p>"
 			}
 		]
 	},
@@ -119,14 +146,17 @@
 		"primary_image_alt": "Califia Farms",
 		"challenges": [
 			{
-				"description": "<p>Migration from legacy e-commerce platform to Shopify Plus</p>"
-			},
+				"description": "<p>New theme development for existing Shopify Plus store</p>"
+			},		
 			{
 				"description": "<p>Advanced metafields configurations for product-level details</p>"
 			},
 			{
-				"description": "<p>Complete control of all content on site to add, remove, delete and content section, sitewide</p>"
-			}
+				"description": "<p>Extensive theme editor and metafield configurations (CMS) for ease of store management</p>"
+			},
+			{
+				"description": "<p>Custom ReCharge implementation</p>"
+			}		
 		]
 	},
 	{
@@ -142,6 +172,14 @@
 			{
 				"url": "/assets/images/sol_angeles.jpg"
 			}
+		],
+		"challenges": [
+			{
+				"description": "<p>New theme development for existing Shopify Plus store</p>"
+			},
+			{
+				"description": "<p>Extensive theme editor and metafield configurations (CMS) for ease of store management</p>"
+			}				
 		]
 	},
 	{
@@ -154,14 +192,17 @@
 		"primary_image_alt": "Johnnie-O",
 		"challenges": [
 			{
-				"description": "<p>Custom ability to handle large catalog taxonomies on category and product listing pages</p>"
-			},
+				"description": "<p>New theme development for existing Shopify Plus store</p>"
+			},		
 			{
 				"description": "<p>Advanced metafields configurations for product-level details</p>"
 			},
 			{
-				"description": "<p>Complete control of all content on site to add, remove, delete and content section, sitewide</p>"
-			}
+				"description": "<p>Custom ability to handle large catalog taxonomies on category and product listing pages</p>"
+			},
+			{
+				"description": "<p>Extensive theme editor and metafield configurations (CMS) for ease of store management</p>"
+			}	
 		]
 	},
 	{
@@ -177,7 +218,7 @@
 				"description": "<p>Migration from legacy e-commerce platform to Shopify Plus</p>"
 			},
 			{
-				"description": "<p>Internal J&J network users to allow for access into the Shopify instance (i.e. Private app).</p>"
+				"description": "<p>Application architecture work for authorization across distributed networks</p>"
 			}
 		]
 	}	

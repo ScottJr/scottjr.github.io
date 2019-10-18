@@ -409,6 +409,9 @@
       width: 100%;
       padding-top: 66.66667%; } }
 
+.bg-dark-transparent {
+  background-color: #ffffffd4; }
+
 figure {
   margin: 0 0 0; }
 
@@ -420,6 +423,9 @@ figure {
 
 ul, ol, dl {
   padding-left: 20px; }
+
+.icon {
+  width: 17px; }
 
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -476,7 +482,7 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
   color: #212529;
   text-align: left;
@@ -777,7 +783,7 @@ hr {
 small,
 .small {
   font-size: 80%;
-  font-weight: 400; }
+  font-weight: 300; }
 
 mark,
 .mark {
@@ -1829,7 +1835,7 @@ pre {
   height: calc(1.5em + 0.75rem + 2px);
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
   color: #495057;
   background-color: #fff;
@@ -2203,7 +2209,7 @@ textarea.form-control {
 
 .btn {
   display: inline-block;
-  font-weight: 400;
+  font-weight: 300;
   color: #212529;
   text-align: center;
   vertical-align: middle;
@@ -2600,7 +2606,7 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5); }
 
 .btn-link {
-  font-weight: 400;
+  font-weight: 300;
   color: black;
   text-decoration: none; }
   .btn-link:hover {
@@ -2831,7 +2837,7 @@ input[type="button"].btn-block {
   width: 100%;
   padding: 0.25rem 1.5rem;
   clear: both;
-  font-weight: 400;
+  font-weight: 300;
   color: #212529;
   text-align: inherit;
   white-space: nowrap;
@@ -3038,7 +3044,7 @@ input[type="button"].btn-block {
   padding: 0.375rem 0.75rem;
   margin-bottom: 0;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
   color: #495057;
   text-align: center;
@@ -3216,7 +3222,7 @@ input[type="button"].btn-block {
   height: calc(1.5em + 0.75rem + 2px);
   padding: 0.375rem 1.75rem 0.375rem 0.75rem;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
   color: #495057;
   vertical-align: middle;
@@ -3288,7 +3294,7 @@ input[type="button"].btn-block {
   z-index: 1;
   height: calc(1.5em + 0.75rem + 2px);
   padding: 0.375rem 0.75rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
   color: #495057;
   background-color: #fff;
@@ -4752,7 +4758,7 @@ a.close.disabled {
   margin: 0;
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
   text-align: left;
   text-align: start;
@@ -4837,7 +4843,7 @@ a.close.disabled {
   max-width: 276px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
   text-align: left;
   text-align: start;
@@ -9190,7 +9196,7 @@ button.bg-dark:focus {
   font-weight: lighter !important; }
 
 .font-weight-normal {
-  font-weight: 400 !important; }
+  font-weight: 300 !important; }
 
 .font-weight-bold {
   font-weight: 700 !important; }

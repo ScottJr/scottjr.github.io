@@ -19,7 +19,7 @@
   </style>
   <div class="container">
     <div class="row">
-      <div class="offset-1 col-10 col-md-6 p-5" style="background: #ffffffd4;">
+      <div class="offset-1 col-10 col-lg-7 col-xl-6 p-5 bg-dark-transparent">
         <h1 class="display-3">{{ project.name }}</h1>
         {% if project.description != nil %} 
           <h2 class="h5">Project Highlights:</h2>
@@ -30,7 +30,7 @@
             {% endfor %}
           </ul>
           {% endif %}
-          <a href="{{ project.url }}" target="_blank">View Site</a>
+          <a href="{{ project.url }}" target="_blank">View Site <img src="/assets/icons/icon-exit.png" alt="Exit" class="icon"></a>
         {% endif %}
       </div>
     </div>

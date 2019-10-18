@@ -1,4 +1,4 @@
-<section class="bg-vh-full pt-7 pt-lg-10 pb-5 pb-lg-10 d-flex align-items-center">
+<section class="bg-vh-full pt-7 pt-lg-10 pb-5 pb-lg-10 d-flex align-items-center" id="{{ project.id }}">
   <div class="container">
     <div class="row">
       <div class="col-10 offset-1 col-lg-6 offset-lg-0 p-md-2 p-lg-5">
@@ -20,7 +20,7 @@
             {% endfor %}
           </ul>
         {% endif %}
-        <a href="{{ project.url }}" target="_blank">View Site</a>
+        <a href="{{ project.url }}" target="_blank">View Site <img src="/assets/icons/icon-exit.png" alt="Exit" class="icon"></a>
       </div>
     </div>
   </div>
