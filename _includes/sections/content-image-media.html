@@ -1,7 +1,7 @@
-<section class="bg-vh-full pt-7 pt-lg-10 pb-5 pb-lg-10 d-flex align-items-center" id="{{ project.id }}">
+<section class="my-5 d-flex align-items-center" id="{{ project.id }}">
   <div class="container">
     <div class="row">
-      <div class="col-10 offset-1 col-lg-6 offset-lg-0 p-md-2 p-lg-5">
+      <div class="col-10 offset-1 col-lg-6 offset-lg-0 p-md-2 p-lg-5{% if include.layout == 'right'%} order-last{% endif%}">
         <h1 class="display-3 d-block d-lg-none">{{ project.name }}</h1> 
         {% if project.primary_image %}
           <div class="my-4 my-lg-0 frame frame--1x1" style="background-image: url('{{ project.primary_image }}');"></div>

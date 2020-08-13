@@ -1,4 +1,7 @@
-<section class="section--panel bg-vh-full py-4 py-lg-6 d-flex align-items-center" id="{{ project.id }}">
+<section
+  class="section--panel bg-vh-full py-4 py-lg-6 d-flex align-items-center"
+  id="{{ project.id }}"
+>
   <style>
     {% if project.layout == "banner" %}
       #{{ project.id }} {
@@ -12,28 +15,29 @@
         right: 0;
         bottom: 0;
         height: 100%;
-        width: 100%; 
+        width: 100%;
         background: #d1d1d142;
       }
     {% endif %}
   </style>
   <div class="container">
     <div class="row">
-      <div class="offset-1 col-10 col-lg-7 col-xl-6 p-5 bg-dark-transparent">
+      <div class="offset-1 col-10 col-lg-7 col-xl-6 p-5 bg-white">
         <h1 class="display-3">{{ project.name }}</h1>
-        {% if project.description != nil %} 
-          <h2 class="h5">Project Highlights:</h2>
-          {% if project.challenges != nil %}
-          <ul>
-            {% for challenge in project.challenges %}
-            <li>{{ challenge.description }}</li>
-            {% endfor %}
-          </ul>
-          {% endif %}
-          {% if project.url != nil %}
-            <a href="{{ project.url }}" target="_blank">View Site <img src="/assets/icons/icon-exit.png" alt="Exit" class="icon"></a>
-          {% endif %}
-        {% endif %}
+        {% if project.description != nil %}
+        <h2 class="h5">Project Highlights:</h2>
+        {% if project.challenges != nil %}
+        <ul>
+          {% for challenge in project.challenges %}
+          <li>{{ challenge.description }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %} {% if project.url != nil %}
+        <a href="{{ project.url }}" target="_blank"
+          >View Site
+          <img src="/assets/icons/icon-exit.png" alt="Exit" class="icon"
+        /></a>
+        {% endif %} {% endif %}
       </div>
     </div>
   </div>

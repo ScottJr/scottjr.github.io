@@ -5,13 +5,18 @@ client_work_section: sections/content-image-media.html
 client_banner_section: sections/banner.html
 ---
 
-<section class="section--panel" style="background-image: url('/assets/images/IMG_4870.JPG');">
+<section
+  class="section--panel"
+  style="background-image: url('/assets/images/IMG_4870.JPG');"
+>
   <div class="container">
     <div class="row">
       <div class="col-md-8">
         <div class="d-flex flex-column justify-content-end bg-vh-full py-5">
           <h1 class="display-2 text-white">Scott Harrington</h1>
-          <p class="text-white">Senior Shopify Plus Engineer | Los Angeles, CA</p>
+          <p class="text-white">
+            Senior Shopify Plus Engineer | Los Angeles, CA
+          </p>
         </div>
       </div>
     </div>
@@ -25,12 +30,14 @@ client_banner_section: sections/banner.html
         <h1>Recent Work</h1>
         <h4>Shopify Plus</h4>
         <p>Lead Developer</p>
-        <p><i>2017 - 2019</i></p>
+        <p><i>2017 - 2020</i></p>
       </div>
       <div class="col-12 col-md-6 pt-2">
         <ul class="list-unstyled">
           {% for project in site.data.projects %}
-            <li><h2><a href="#{{ project.id }}">{{ project.name }}</a></h2></li>
+          <li>
+            <h2><a href="#{{ project.id }}" class="text-decoration-none">{{ project.name }}</a></h2>
+          </li>
           {% endfor %}
         </ul>
       </div>
@@ -39,14 +46,14 @@ client_banner_section: sections/banner.html
 </section>
 
 {% for project in site.data.projects %}
-  {% assign index_odd = forloop.index | modulo: 2 %}
-  {% if page.client_work_section %}
-    {% if project.layout == 'banner' %}
+  {% if page.client_work_section %} 
+    {% if project.layout == 'banner'%} 
       {% include {{ page.client_banner_section }} %}
     {% else %}
-      {% include {{ page.client_work_section }} %}
-    {% endif %}
-  {% endif %}
+      {% capture layout_justify %}{{ project.layout_justify }}{% endcapture %}
+      {% include {{ page.client_work_section }} layout=layout_justify %}
+    {% endif %} 
+  {% endif %} 
 {% endfor %}
 
 <section class="bg-vh-full pt-5 pt-lg-8 pb-5 pb-lg-8">
@@ -61,7 +68,13 @@ client_banner_section: sections/banner.html
       <div class="col-12 col-md-6 pt-2">
         <ul class="list-unstyled">
           {% for project in site.data.old-projects %}
-            <li><h2>{{ project.name }}{% if project.description != nil %} <small class="text-muted">{{ project.description }}</small>{% endif %}</h2></li>
+          <li>
+            <h2>
+              {{ project.name }}{% if project.description != nil %}
+              <small class="text-muted">{{ project.description }}</small>{%
+              endif %}
+            </h2>
+          </li>
           {% endfor %}
         </ul>
       </div>
@@ -69,4 +82,4 @@ client_banner_section: sections/banner.html
   </div>
 </section>
 
-{% include sections/contact.html %} 
+{% include sections/contact.html %}
