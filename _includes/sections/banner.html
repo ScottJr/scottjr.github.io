@@ -22,7 +22,7 @@
   </style>
   <div class="container">
     <div class="row">
-      <div class="offset-1 col-10 col-lg-7 col-xl-6 p-5 bg-dark-transparent">
+      <div class="offset-1 col-10{% if project.content_align_md_up == 'right' %} offset-md-5 offset-xl-6{% else %} offset-md-0{% endif %} col-lg-7 col-xl-6 p-5 bg-dark-transparent">
         <h1 class="display-3">{{ project.name }}</h1>
         {% if project.description != nil %}
         <h2 class="h5">Project Highlights:</h2>

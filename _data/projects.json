@@ -1,26 +1,41 @@
 [
   {
+    "name": "Caligenix",
+    "description": "<p>Lead Development on Caligenix's go to market product.</p>",
+    "id": "caligenix",
+    "shopify_plus_enabled": false,
+    "primary_image": "/assets/images/caligenix.jpg",
+    "primary_image_alt": "Caligenix",
+    "url": "https://www.caligenix.com",
+    "layout": "banner",
+    "content_align_md_up": "right",
+    "challenges": [
+      {
+        "description": "<p>Lead Development on Caligenix's go to market product</p>"
+      },
+      {
+        "description": "<p>Ongoing CTO consulting support for all facets of Shopify store</p>"
+      },
+      {
+        "description": "<p>Extensive theme editor and metafield configurations (CMS) for ease of store management</p>"
+      },
+      {
+        "description": "<p>Custom PayWhirl recurring payments implementation</p>"
+      }
+    ]
+  },
+  {
     "name": "Elix Healing",
     "description": "<p>Lead Development on Elix Healing's go to market product.</p>",
     "id": "elix",
     "shopify_plus_enabled": false,
     "primary_image": "/assets/images/omar-lopez-auEe5lKHZCw-unsplash.jpg",
-    "primary_image_alt": "Only Natural Pet",
+    "primary_image_alt": "Elix Healing",
     "url": "https://www.elixhealing.com",
     "layout": "banner",
-    "images": [
-      {
-        "url": "/assets/images/stio_1_edit.jpg",
-        "type": "primary"
-      },
-      {
-        "url": "/assets/images/stio_1_edit.jpg",
-        "type": "primary"
-      }
-    ],
     "challenges": [
       {
-        "description": "<p>Lead Development on Elix Healing's go to market product</p>"
+        "description": "<p>Lead Shopify Development on Elix Healing's go to market product</p>"
       },
       {
         "description": "<p>Ongoing CTO consulting support for all facets of Shopify store</p>"
@@ -35,10 +50,7 @@
         "description": "<p>Custom blog with merchandisable posts</p>"
       },
       {
-        "description": "<p>Custom implementation of Yotpo reviews platform</p>"
-      },
-      {
-        "description": "<p>Developed in partnership with <a href='https://www.scoutside.com/'>Scoutside</a></p>"
+        "description": "<p>Custom implementation of Stamped.io reviews platform</p>"
       }
     ]
   },
@@ -145,6 +157,7 @@
     "url": "https://www.smartypantsvitamins.com",
     "primary_image": "/assets/images/smartypants.jpg",
     "layout": "banner",
+    "content_align_md_up": "right",    
     "challenges": [
       {
         "description": "<p>New theme development for existing Shopify Plus store</p>"
@@ -212,6 +225,7 @@
     "primary_image": "/assets/images/sol_angeles.jpg",
     "primary_image_alt": "Sol Angeles",
     "layout": "banner",
+    "content_align_md_up": "right",    
     "images": [
       {
         "url": "/assets/images/sol_angeles.jpg"
