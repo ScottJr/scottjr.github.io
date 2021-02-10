@@ -1,5 +1,5 @@
 <section
-  class="section--panel bg-vh-full py-6 d-flex align-items-center"
+  class="section--panel bg-vh-full py-6 py-lg-10 d-flex align-items-center"
   id="{{ project.id }}"
 >
   <style>
@@ -20,24 +20,32 @@
       }
     {% endif %}
   </style>
-  <div class="container">
+  <div class="container banner">
     <div class="row">
-      <div class="offset-1 col-10{% if project.content_align_md_up == 'right' %} offset-md-5 offset-xl-6{% else %} offset-md-0{% endif %} col-lg-7 col-xl-6 p-5 bg-dark-transparent">
-        <h1 class="display-3">{{ project.name }}</h1>
+      <div
+        data-aos="fade-up" data-aos-delay="200" data-aos-duration="500" 
+        class="col-12{% if project.content_align_md_up == 'right' %} offset-lg-5 offset-xl-6{% else %} offset-lg-0{% endif %} col-lg-7 col-xl-6 p-5 bg-dark-transparent">
+        <h1 class="display-4 mb-5">{{ project.name }}</h1>
         {% if project.description != nil %}
-        <h2 class="h5">Project Highlights:</h2>
-        {% if project.challenges != nil %}
-        <ul>
-          {% for challenge in project.challenges %}
-          <li>{{ challenge.description }}</li>
-          {% endfor %}
-        </ul>
-        {% endif %} {% if project.url != nil %}
-        <a href="{{ project.url }}" target="_blank"
-          >View Site
-          <img src="/assets/icons/icon-exit.png" alt="Exit" class="icon"
-        /></a>
-        {% endif %} {% endif %}
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <h2 class="h5 mb-0">Project Highlights:</h2>
+            </div>
+            <div class="col-12 col-md-8">
+              {% if project.challenges != nil %}
+                <ul class="list-unstyled">
+                  {% for challenge in project.challenges %}
+                  <li>{{ challenge.description }}</li>
+                  {% endfor %}
+                </ul>
+              {% endif %} 
+              {% if project.url != nil %}
+              <a href="{{ project.url }}" target="_blank"
+                >View Site</a>
+              {% endif %} 
+            </div>
+          </div>
+        {% endif %}
       </div>
     </div>
   </div>

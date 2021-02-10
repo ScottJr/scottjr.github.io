@@ -2,6 +2,7 @@
   <div class="container">
     <div class="row">
       <div
+        data-aos="fade" data-aos-delay="200" data-aos-easing="ease-in" data-aos-duration="600"
         class="col-10 offset-1 col-lg-6 offset-lg-0 p-md-2 p-lg-5{% if include.layout == 'right'%} order-md-last{% endif%}"
       >
         <h1 class="display-3 d-block d-lg-none">{{ project.name }}</h1>
@@ -13,23 +14,27 @@
         {% endif %}
       </div>
       <div
+        data-aos="fade-up" data-aos-delay="200" data-aos-duration="600"
         class="col-10 offset-1 col-lg-6 offset-lg-0 p-md-2 p-lg-5 d-flex flex-column justify-content-center"
       >
-        <h1 class="display-3 d-none d-lg-block">{{ project.name }}</h1>
+        <h1 class="display-4 d-none d-lg-block mb-5">{{ project.name }}</h1>
         {% if project.description != nil %} {% comment %} {{ project.description
         }} {% endcomment %} {% endif %} {% if project.challenges != nil %}
-        <h2 class="h5">Project Highlights:</h2>
-        <ul>
-          {% for challenge in project.challenges %}
-          <li>{{ challenge.description }}</li>
-          {% endfor %}
-        </ul>
-        {% endif %} {% if project.url != nil %}
-        <a href="{{ project.url }}" target="_blank"
-          >View Site
-          <img src="/assets/icons/icon-exit.png" alt="Exit" class="icon"
-        /></a>
-        {% endif %}
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <h2 class="h5 mb-0">Project Highlights:</h2>
+          </div>
+          <div class="col-12 col-md-8">
+            <ul class="list-unstyled">
+              {% for challenge in project.challenges %}
+              <li>{{ challenge.description }}</li>
+              {% endfor %}
+            </ul>
+            {% endif %} {% if project.url != nil %}
+            <a href="{{ project.url }}" target="_blank">View Site</a>
+            {% endif %}
+          </div>
+        </div>
       </div>
     </div>
   </div>

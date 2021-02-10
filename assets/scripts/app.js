@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
   var classes = {
   }
 
-  submitForm();
+  initAos();
 
 })
 
-function submitForm() {
-  console.log('hi');
+function initAos() {
+  AOS.init(); 
 }

@@ -27,16 +27,27 @@ client_banner_section: sections/banner.html
 <section class="bg-vh-full pt-5 pt-lg-8 pb-5 pb-lg-8">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-offset-2 col-md-4">
+      <div
+        data-aos="fade-up" data-aos-delay="200" data-aos-duration="600"
+        class="col-12 col-md-offset-2 col-md-4">
         <h2 class="mt-2">Shopify & Shopify Plus</h2>
         <p>Lead Developer</p>
         <p><i>2014 - 2021</i></p>
       </div>
-      <div class="col-12 col-md-6 pt-2">
+      <div 
+
+        class="col-12 col-md-6 pt-2" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
         <ul class="list-unstyled">
           {% for project in site.data.projects %}
           <li>
             <h2><a href="#{{ project.id }}" class="text-decoration-none">{{ project.name }}</a></h2>
+          </li>
+          {% endfor %}
+          {% for project in site.data.old-projects %}
+          <li>
+            <h2>
+              {{ project.name }}
+            </h2>
           </li>
           {% endfor %}
         </ul>
@@ -55,30 +66,5 @@ client_banner_section: sections/banner.html
     {% endif %} 
   {% endif %} 
 {% endfor %}
-
-<section class="bg-vh-full pt-5 pt-lg-8 pb-5 pb-lg-8">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-offset-2 col-md-4">
-        <h2 class="h1">Shopify</h2>
-        <p>Lead Developer</p>
-        <p><i>2014 - 2017</i></p>
-      </div>
-      <div class="col-12 col-md-6 pt-2">
-        <ul class="list-unstyled">
-          {% for project in site.data.old-projects %}
-          <li>
-            <h2>
-              {{ project.name }}{% if project.description != nil %}
-              <small class="text-muted">{{ project.description }}</small>{%
-              endif %}
-            </h2>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
 
 {% include sections/contact.html %}
